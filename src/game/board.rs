@@ -124,7 +124,7 @@ impl Board {
         return board_mask;
     }
 
-    pub fn mine_hit(&self) -> bool { self.hit_mine }
+    pub fn has_hit_mine(&self) -> bool { self.hit_mine }
 
     fn get_unbounded_surrounding_coordinates(x: usize, y: usize) -> Vec<(usize, usize)> {
         let mut surrounding: Vec<(usize, usize)> = Vec::new();
